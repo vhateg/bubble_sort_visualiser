@@ -81,7 +81,6 @@ void bubble (int v[])
         for (j = 0; j < 9-i; j++)
         {
             system ("CLS");
-            std::cout<<'\n'<<'\n'<<"Step number "<<k++<<":"<<'\n'<<'\n';
             show2(v,j,j+1,k++);
             if (v[j]>v[j+1])
             {
@@ -120,6 +119,7 @@ int main(){
     in='a';
     while (in!='y')
     {
+        std::cout<<'\n'<<'\n';
         randomizer (v);
         show (v);
         std::cout<<'\n'<<"is this sequence acceptable? (y)es/(N)o";
